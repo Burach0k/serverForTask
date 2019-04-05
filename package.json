@@ -1,0 +1,49 @@
+{
+  "name": "react-config",
+  "version": "1.0.0",
+  "description": "Make a react config for understanding",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node src/script",
+    "fix-code": "prettier-eslint --write src/**/*.{js,jsx} "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladesco/react-config.git"
+  },
+  "author": "Sverbut Uladzislau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladesco/react-config/issues"
+  },
+  "homepage": "https://github.com/vladesco/react-config#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.21",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "identity-obj-proxy": "^3.0.0",
+    "prettier": "^1.16.4",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  }
+}
